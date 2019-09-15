@@ -1,78 +1,239 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
+    box-sizing: content-box;
     padding: 0;
+    margin: 0;
+}
+
+html {
+    background-color: rgb(158, 158, 158);
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+    margin: 0 auto;
+    max-width: 1000px;
 }
 
 img {
     width: 100%;
+    
 }
 
-body {
-    max-width: 1000px;
+header{
+    height: 3rem;
+    display: flex;
+    background-image:radial-gradient(rgb(141, 141, 141) 20%, rgba(158, 158, 158, 0) 80%);
+    justify-content: space-between;
+    width: 100%;
+}
+
+.homepage-icon, .projects-icon,  .resume-icon, .linkedin, .instagram {
+    width: 28px;
+    padding: 10px 20px;
+}
+
+.home-title {
+    padding-left: .05rem;
+}
+
+main {
     margin: 0 auto;
-}
-
-.main-container {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+    height: 100%;
+    background-color: rgb(158, 158, 158);
 }
 
-header {
-    background-color: #C0C0C0;
-}
-
-nav {
-    padding: 3px 0;
+.intro, footer{
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 auto; 
+    align-content: center;
+    flex-direction: row;
+    text-align: center;
+    background-image:radial-gradient(rgb(141, 141, 141) 20%, rgba(158, 158, 158, 0) 80%);
 }
 
-.homepage-icon, .resume-icon, .projects-icon {
-    width: 40px;
-    padding: 5px;
+.intro {
+    border-bottom: 2px ridge grey;
 }
 
-.homepage-icon-div {
-    align-content: flex-start;
+.me, .title {
+    width: 48%;
 }
 
-.restof-icons-div {
-    align-content: flex-end;
-}
-    
-
-.divider { 
-    border: 1px dashed darkgrey;
-}
-
-section {
-    margin: 10px 20px;
+.travel-shot {
+    transform: rotate(90deg);
+    object-fit: center/cover;
+    width: 30%;
+    margin-left: 20px;
+    border-radius: 10px 10px;
+    border-top: 3px solid rgb(65, 65, 65);
+    border-right: 3px solid rgb(65, 65, 65);
 }
 
 .me {
-    height: 300px;
-    max-width: 400px;
     border-radius: 50%;
-    padding: 10px 0;
+    padding: .25rem 0;
+    padding-right: .25rem;
+    max-width: 45%;
 }
 
-.jump-to-list {
-    list-style: none;
+.title {
+    justify-self: center;
+    align-self: center;
+    width: 50%;
+    font-size: ;
+}
+
+.social-title {
+    justify-self: center;
+    width: 100%
+}
+
+.link-list {
     display: flex;
-    justify-content: space-around;
+    text-align: center;
+    width: 100%;
+    padding: .45rem 0;
+    justify-content: space-evenly;
 }
 
-.jump-to-list a {
-    text-decoration: none;
-    font-size: 20px;
+.title-divider {
+    width: 200%; 
+    justify-self: center;
+    border-top: 2px solid black;
+    margin: .35rem 0;
+    padding-top: .35rem;
 }
 
-.jump-to-list a:hover {
-    text-decoration: underline;
+.divider {
+    align-self: center;
+    border-top: .25rem solid rgb(105,105,105);
     background-color: grey;
 }
 
-footer {
-    display: 
+.info-section, .intro {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(195, 195, 195);
+    justify-self: space-evenly;
+    max-width: 400;
+    border-bottom: .25rem solid rgb(65, 65, 65);
+    border-right: .25rem solid rgb(65, 65, 65);
+    border-radius: .5rem;
+    margin: .5rem;
+}
+
+.info-lower-section {
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.info-title {
+    font-size: 2rem;
+    position: relative;
+    top: 15px; 
+    left: 10px;
+}
+
+.where-img, .why-img, .who-img {
+    margin: .45rem;
+    border-radius: 10px 10px;
+}
+
+.where-img {
+    background: linear-gradient(rgba(163, 163, 163, 0.8), rgba(0, 0, 0, 0.5)), url("images/riverwalk.jpg") center/cover no-repeat;
+    width: 100%;
+    height: 8rem;
+    border-bottom: 3px solid rgb(65, 65, 65);
+    border-right: 3px solid rgb(65, 65, 65);
+}
+
+.who-img {
+    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(0, 0, 0, 0.5)), url("images/psychology.jpg") center/cover no-repeat;
+    width: 100%;
+    height: 8rem;
+    border-bottom: 3px solid rgb(65, 65, 65);
+    border-right: 3px solid rgb(65, 65, 65);
+}
+
+.why-img {
+    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(0, 0, 0, 0.5)), url("images/red-s.jpeg") center/cover no-repeat;
+    width: 100%;
+    height: 8rem;
+    border-bottom: 3px solid rgb(65, 65, 65);
+    border-right: 3px solid rgb(65, 65, 65);
+}
+
+.info {
+    padding: 1rem;
+    justify-self: space-around;
+}
+
+.info-part1, .info-part2, .info-part3 {
+    margin: .25rem .15rem;
+}
+
+.info-part3 {
+    width: 35%;
+}
+
+/*--------- Project Page Tags ---------*/
+
+.project-intro {
+    width: 100%;
+}
+
+.projects-title {
+    display: flex;
+    text-align: center;
+    background-color: grey;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.github-link {
+    margin: .25rem 1rem;
+}
+
+.project-1, .project-2 {
+    padding: .45rem;
+    margin: .45rem .5rem;
+    border-radius: 10px 10px;
+}
+
+.project-1 {
+    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(0, 0, 0, 0.5)), url("images/small-business.png") center/cover no-repeat;
+    width: 100%;
+    height: 8rem;
+    border-bottom: 3px solid rgb(65, 65, 65);
+    border-right: 3px solid rgb(65, 65, 65);
+}
+
+.project-2 {
+    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(0, 0, 0, 0.5)), url("images/dog-adoption-screenshot.png") center/cover no-repeat;
+    width: 100%;
+    height: 8rem;
+    border-bottom: 3px solid rgb(65, 65, 65);
+    border-right: 3px solid rgb(65, 65, 65);
+}
+
+/* -------- Resume Page -------- */
+
+.main-container {
+    display: flex; 
+    flex-direction: column;
+}
+
+.main-title {
+    align-self: center;
+}
+
+.contact-title {
+
 }

@@ -5,49 +5,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css"><link href="https://fonts.googleapis.com/css?family=Oswald:400,500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/0c4b9c2591.js"></script>
     <title>Resume</title>
 </head>
 
 <body>
     <header>
-        <h1 class="header-title">Portfolio Site for Charles McKelvey</h1>
-        <nav>
-            <ul>
-                <li><a href="homepage.html">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="resume.html">Resume</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main class="main-container">
-        <h2 class="main-title">Resume</h2>
-        <h3 class="resume-title">Contact Info:</h3>
-        <ul>
-            <li>Email</li>
-            <li>Phone</li>
-        </ul>
-        <div class="education-container">
-            <h3 class="resume-title">Education</h3>
-
-            <h4 class="resume-subtitles">Alamance Community College</h4>
-            <p>Info regarding ACC</p>
-
-            <h4 class="resume-subtitles">Self-Taught Endeavors</h4>
-
-            <h5>Codeschool, now known as PluralSight</h5>
-            <p>ELABORATE</p>
-            <h5>Treehouse</h5>
-            <p>ELABORATE</p>
-            <h5>MDN Tutorials</h5>
-            <p>ELABORATE</p>
-            <h5>MMTUTS - Multimedia Tutorials</h5>
-            <p>ELABORATE</p>
-
-            <h3>Employment History:</h3>
-            <p>Spoonflower</p>
+    
+        <div class="homepage-box">
+            <a href="homepage.html"><img class="homepage-icon" src="images/home-icon.svg" alt="Homepage Icon"></a>
         </div>
+    
+        <div class="projects-resume-box">
+            <a href="projects.html"><img class="projects-icon" src="images/projects-img.svg" alt="Projects Icon"></a>
+            <a href="resume.html"><img class="resume-icon" src="images/resume-icon.svg" alt="Resume Icon"></a>
+        </div>
+    
+    </header>
+
+    <main class="main-container">
+        <h1 class="main-title">Resume</h2>
+        <section class="education info-section">
+            <h3 class="info info-title">Education</h3>
+
+            <h4 class="info">Alamance Community College</h4>
+            <p class="info">Associates in Arts</p>
+            
+            <h4 class="info-part1">Self-Taught Endeavors</h4>
+            
+            <h5 class="info">Codeschool, now known as PluralSight</h5>
+            <p class="info">This was using HTML/CSS and dabbling in JavaScript</p>
+            <h5 class="info">Treehouse</h5>
+            <p class="info">Where I was given Python information and computation efficieny</p>
+            <h5 class="info">MDN Tutorials</h5>
+            <p class="info">Generally used as a repository of information but I also delved into their Web Development Beginner Tutorials</p>
+            <h5 class="info">MMTUTS - Multimedia Tutorials</h5>
+            <p class="info">A Norhtern Europe Youtube Channel that taught me JavaScript by making a game and responsive design with HTML/CSS</p>
+        </section>
+
+        <section class="contact info-section">
+            <h3 class="info info-title">Contact Info:</h3>
+            <ul>
+                <li>Email: chazmckelvey@gmail.com</li>
+                <li>Phone: 919-599-3565</li>
+            </ul>
+        </section>
+
+        <section class="job-hist info-section">
+            <h3 class="info info-title">Employment History:</h3>
+            <h4>Spoonflower</h4>
+            <p>The one and only job I have ever had but having been there for 4 years, I learned a lot about business. I was on the
+                verge of becoming a Team Leader before moving onto Momentum Learning. I was already a Dye Sublimation Leader and a
+                Mentor for the team.</p>
+        </section>
     </main>
+    <footer>
+        <ul class="link-list">
+            <a href="#head">Beam Me Up!</a>
+            <a href="#where">Where am I?</a>
+            <a href="#who">Who am I?</a>
+            <a href="#why">Why am I?</a>
+        </ul>
+        <ul class="link-list">
+            <a class="linkedin" href="https://www.linkedin.com/in/charles-mckelvey-8a875340/" ><img src="images/linkedin.svg" alt=""></a>
+            <a class="instagram" href="https://www.instagram.com/sonofkelvey/?hl=en" ><img src="images/insta.svg" alt=""></a>
+        </ul>
+    </footer>
 </body>
 
 </html>
