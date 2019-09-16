@@ -60,7 +60,7 @@ main {
 }
 
 .me, .title {
-    width: 48%;
+    width: 47%;
 }
 
 .travel-shot {
@@ -188,15 +188,7 @@ main {
     border-right: 3px solid rgb(65, 65, 65);
 }
 
-.picture-descrip {
-    
-}
-
 /*--------- Project Page Tags ---------*/
-
-.project-intro {
-    width: 100%;
-}
 
 .projects-title {
     display: flex;
