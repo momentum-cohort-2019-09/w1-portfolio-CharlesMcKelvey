@@ -22,7 +22,7 @@ img {
 header{
     height: 3rem;
     display: flex;
-    background-image:radial-gradient(rgb(141, 141, 141) 20%, rgba(158, 158, 158, 0) 80%);
+    background-image:radial-gradient(rgb(141, 141, 141) 25%, rgba(158, 158, 158, 0) 75%);
     justify-content: space-between;
     width: 100%;
 }
@@ -52,7 +52,7 @@ main {
     align-content: center;
     flex-direction: row;
     text-align: center;
-    background-image:radial-gradient(rgb(141, 141, 141) 20%, rgba(158, 158, 158, 0) 80%);
+    background-image:radial-gradient(rgb(141, 141, 141) 25%, rgba(158, 158, 158, 0) 75%);
 }
 
 .intro {
@@ -66,8 +66,8 @@ main {
 .travel-shot {
     transform: rotate(90deg);
     object-fit: center/cover;
-    width: 30%;
-    margin-left: 20px;
+    width: 15rem;
+    margin-left: 3rem;
     border-radius: 10px 10px;
     border-top: 3px solid rgb(65, 65, 65);
     border-right: 3px solid rgb(65, 65, 65);
@@ -171,7 +171,6 @@ main {
 
 .info {
     padding: 1rem;
-    justify-self: space-around;
 }
 
 .info-part1, .info-part2, .info-part3 {
@@ -179,7 +178,18 @@ main {
 }
 
 .info-part3 {
-    width: 35%;
+    width: 45%;
+}
+
+.picture-div {
+    margin: .75rem;
+    border-radius: .75rem;
+    border-bottom: 3px solid rgb(65, 65, 65);
+    border-right: 3px solid rgb(65, 65, 65);
+}
+
+.picture-descrip {
+    
 }
 
 /*--------- Project Page Tags ---------*/
@@ -204,7 +214,7 @@ main {
 .project-1, .project-2 {
     padding: .45rem;
     margin: .45rem .5rem;
-    border-radius: 10px 10px;
+    border-radius: .65rem;
 }
 
 .project-1 {
@@ -234,6 +244,21 @@ main {
     align-self: center;
 }
 
-.contact-title {
+.education {
+    display: flex; 
+    flex-wrap: wrap;
+    flex-direction: column;
+}
 
+.middle-info {
+    background-color: rgb(131, 130, 130);
+}
+
+.formal-education {
+    background-color: rgb(131, 130, 130);
+}
+
+.contacts {
+    list-style: none;
+    justify-content: space-around;
 }
